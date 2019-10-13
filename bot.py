@@ -56,7 +56,7 @@ def send_anon_photo (message):
     testb.send_photo(to_chat_id_1, message.photo[-1].file_id)
     if not message.caption == None:
         testb.send_message(to_chat_id_1, message.caption)
-    testb.send_message(message.chat.id, "Отправил твоё обращение :)")
+    testb.send_message(message.chat.id, "Отправил твоё обращение =)")
 
 
 @testb.message_handler(content_types = ['document'])
@@ -68,7 +68,7 @@ def send_anon_document (message):
     testb.send_document(to_chat_id_1, message.document.file_id)
     if not message.caption == None:
         testb.send_message(to_chat_id_1, message.caption)
-    testb.send_message(message.chat.id, "Отправил твоё обращение :)")
+    testb.send_message(message.chat.id, "Отправил твоё обращение =)")
 
 
 testb.polling()
